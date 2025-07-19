@@ -2,7 +2,7 @@
 
 **Course**: ISTM 6216 – Mobile Applications Development  
 **Instructor**: Dr. Anya Mendenhall  
-**Semester**: Fall 2024  
+**Semester**: Fall 2025  
 **Topic**: Layout Design, XML, ViewGroups, and Basic UI Components
 
 ---
