@@ -1,67 +1,104 @@
-# Lecture 4 – Android UI Layouts and Views
+# Final approach: write without backtick code blocks that are causing syntax errors
+
+from pathlib import Path
+
+final_md_content = """
+# Lecture 4 – Kotlin Basics
 
 **Course**: ISTM 6216 – Mobile Applications Development  
 **Instructor**: Dr. Anya Mendenhall  
-**Semester**: Fall 2025  
-**Topic**: Layout Design, XML, ViewGroups, and Basic UI Components
+**Semester**: Fall 2024  
+**Topic**: Kotlin Language Fundamentals
 
 ---
 
 ## 🎯 Objectives
 
-- Understand the structure of Android UI design  
-- Use XML to define layouts  
-- Learn about Views and ViewGroups  
-- Explore key UI components (TextView, EditText, Button, ImageView)  
-- Practice building interfaces using the Layout Editor and XML
+- Set up and explore Kotlin in IntelliJ or Android Studio
+- Understand variables, data types, and operators
+- Practice control flow with conditionals and loops
+- Work with collections: lists and arrays
+- Understand null safety and Kotlin best practices
 
 ---
 
 ## 🧠 Topics Covered
 
-### 1. What is a Layout?
-- A layout defines the visual structure for a UI screen
-- Can be created using **XML** or programmatically in Kotlin
-- The root element is typically a `ViewGroup`
+1. Getting Started  
+- Open IntelliJ IDEA and create a Kotlin project  
+- Explore the REPL (Read-Eval-Print-Loop)  
+- Write a simple printHello() function and run with Ctrl+Enter  
+
+2. Operators in Kotlin  
+- Arithmetic: +, -, *, /, %  
+- Assignment: =  
+- Equality: ==, !=  
+- Increment/Decrement: ++, --  
+- Comparison: <, <=, >, >=  
+- Numeric functions: 2.4.div(2), 3.5.plus(4), 2.times(3)  
+
+3. Data Types  
+- Int, Byte, Short, Long, Double, Float  
+- Type preservation and conversion  
+- Use underscores for readability  
+
+4. Strings and Templates  
+- String literals and multiline strings  
+- Escape characters: \\n, \\t  
+- Templates and template expressions  
+
+5. Variables  
+- val (immutable), var (mutable)  
+- Type inference and explicit typing  
+
+6. Conditionals  
+Example if/else:  
+if (cups > plates) println("Too many cups!")  
+else println("Not enough cups!")  
+
+Example when:  
+when (score) {  
+  0 -> println("No results")  
+  in 1..39 -> println("Got results!")  
+  else -> println("That's a lot of results!")  
+}  
+
+7. Loops  
+- for, for with index, ranges  
+- while, do...while, repeat  
+
+8. Collections  
+- listOf, mutableListOf  
+- arrayOf, combining arrays  
+
+9. Null Safety  
+- Nullable types with ?, safe call, Elvis (?:) operator  
+- !! operator (non-null assertion)
 
 ---
 
-### 2. View vs ViewGroup
-- **View**: a basic UI component (e.g., TextView, Button)
-- **ViewGroup**: a container that holds multiple views (e.g., LinearLayout, ConstraintLayout)
+## 💻 Class Activity
+
+- Write and test a Kotlin script using variables, loops, and conditionals
 
 ---
 
-### 3. Layout Types
+## 📌 Homework
 
-#### ➤ LinearLayout
-- Arranges child views **vertically** or **horizontally**
-- Attributes: `orientation`, `layout_width`, `layout_height`
-
-#### ➤ RelativeLayout (Deprecated)
-- Positions views relative to each other or the parent
-- Superseded by ConstraintLayout
-
-#### ➤ ConstraintLayout
-- Modern, flexible layout manager
-- Uses **constraints** for precise positioning
-- Supports flat layout hierarchies = better performance
+- Complete Lesson 1: Kotlin Basics  
+- Submit Kotlin file to your team GitHub repo under labs/week4/
 
 ---
 
-### 4. Common View Elements
+## 📚 Resources
 
-- `TextView` – displays text  
-- `EditText` – allows user input  
-- `Button` – performs actions on tap  
-- `ImageView` – displays images  
-- `CheckBox`, `RadioButton`, `Switch` – input toggles  
+- https://play.kotlinlang.org/  
+- https://kotlinlang.org/docs/home.html  
+- https://play.kotlinlang.org/koans/overview
+"""
 
-Example:
-```xml
-<TextView
-  android:id="@+id/greetingText"
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content"
-  android:text="Hello, Android!" />
+# Save the file
+path = Path("/mnt/data/lecture04-kotlin-basics.md")
+path.write_text(final_md_content)
+path.name
 
