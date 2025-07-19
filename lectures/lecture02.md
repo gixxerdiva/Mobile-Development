@@ -2,7 +2,7 @@
 
 **Course**: ISTM 6216 – Mobile Applications Development  
 **Instructor**: Dr. Anya Mendenhall  
-**Semester**: Fall 2024  
+**Semester**: Fall 2025  
 **Topic**: Version Control with Git & GitHub  
 **Use Case**: Collaborative Android/Kotlin development
 
