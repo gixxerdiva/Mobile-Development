@@ -2,7 +2,7 @@
 
 **Course**: ISTM 6216 – Mobile Applications Development  
 **Instructor**: Dr. Anya Mendenhall  
-**Semester**: Fall 2024  
+**Semester**: Fall 2025
 **Topic**: Android Overview, Team Project Proposals, GitHub Workflow
 
 ---
